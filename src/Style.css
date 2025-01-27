@@ -5,6 +5,7 @@ html {
   --color-4: #f7f8f5;
   --color-5: #fff;
   --gap: 1.25rem;
+  --gap-s: 0.625rem;
 }
 
 body {
