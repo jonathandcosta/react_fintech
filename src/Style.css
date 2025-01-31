@@ -75,6 +75,38 @@ ul {
   display: grid;
   padding: var(--gap);
   gap: var(--gap);
+  grid-template-columns: 240px auto;
+}
+
+/* sidenav */
+.sidenav li span {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-s);
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--gap);
+}
+
+.sidenav span img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-4);
+  border-radius: var(--gap);
+}
+
+.sidenav li a {
+  flex: 1;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: var(--color-1);
+  /* padding: var(--gap-s); */
+}
+
+.sidenav li span:hover {
+  background: var(--color-5);
+  width: 100%;
 }
 
 /* resumo */
