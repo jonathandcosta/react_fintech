@@ -35,6 +35,42 @@ const Resumo = () => {
           </span>
         </div>
       </div>
+
+      <p className='block'>Totais</p>
+
+      <div className="flex">
+        <div className="flex mb box">
+          <span>
+            Pagos: {data.filter((i) => i.status === "pago").length}
+          </span>
+        </div>
+        <div className="flex mb box">
+          <span>
+            Processando: {data.filter((i) => i.status === "processando").length}
+          </span>
+        </div>
+        <div className="flex mb box">
+          <span>
+            Falha: {data.filter((i) => i.status === "falha").length}
+          </span>
+        </div>
+        <div className="flex mb box">
+          <span>
+            Boletos: {data.filter((i) => i.pagamento === "boleto").length}
+          </span>
+        </div>
+        <div className="flex mb box">
+          <span>
+            Cartão: {data.filter((i) => i.pagamento === "cartão").length}
+          </span>
+        </div>
+        <div className="flex mb box">
+          <span>
+            de pix: {data.filter((i) => i.pagamento === "pix").length}
+          </span>
+        </div>
+
+      </div>
       <div className="box mb">Gráficos</div>
     </section>
 
