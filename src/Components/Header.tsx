@@ -10,8 +10,10 @@ const Header = () => {
   React.useEffect(() => {
     if (location.pathname === '/') {
       setTitle('Resumo')
+      document.title = 'Fintech | Resumo'
     } else if (location.pathname === '/vendas') {
       setTitle('Vendas')
+      document.title = 'Fintech | Vendas'
     }
   }, [location])
 
