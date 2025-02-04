@@ -36,37 +36,37 @@ const Resumo = () => {
         </div>
       </div>
 
-      <p className='block'>Totais</p>
+      <p><strong>Totais</strong></p>
 
       <div className="flex">
         <div className="flex mb box">
           <span>
-            Pagos: {data.filter((i) => i.status === "pago").length}
+            <strong>Pagos</strong>: {data.filter((i) => i.status === "pago").length}
           </span>
         </div>
         <div className="flex mb box">
           <span>
-            Processando: {data.filter((i) => i.status === "processando").length}
+            <strong>Processando</strong>: {data.filter((i) => i.status === "processando").length}
           </span>
         </div>
         <div className="flex mb box">
           <span>
-            Falha: {data.filter((i) => i.status === "falha").length}
+            <strong>Falha</strong>: {data.filter((i) => i.status === "falha").length}
           </span>
         </div>
         <div className="flex mb box">
           <span>
-            Boletos: {data.filter((i) => i.pagamento === "boleto").length}
+            <strong>Boleto</strong>: {data.filter((i) => i.pagamento === "boleto").length}
           </span>
         </div>
         <div className="flex mb box">
           <span>
-            Cartão: {data.filter((i) => i.pagamento === "cartão").length}
+            <strong>Cartão</strong>: {data.filter((i) => i.pagamento === "cartão").length}
           </span>
         </div>
         <div className="flex mb box">
           <span>
-            de pix: {data.filter((i) => i.pagamento === "pix").length}
+            <strong>Pix</strong>: {data.filter((i) => i.pagamento === "pix").length}
           </span>
         </div>
 
